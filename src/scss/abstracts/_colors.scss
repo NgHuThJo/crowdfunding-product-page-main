@@ -1,0 +1,66 @@
+// Primary colors
+// Naming convention based on position in color wheel
+// 30 - 210: warm - mid - cool
+// 210 - 30: cool - mid - warm
+$c-cyan-w-500: 176 50% 47%;
+$c-cyan-w-700: 176 72% 28%;
+
+// Neutral colors
+$c-black-900: 0 0% 0%;
+$c-gray-500: 0 0% 48%;
+$c-white-000: 0 0% 100%;
+
+// Color map for generating color utility classes
+$utility-color: (
+  "cyan": (
+    "w-500": $c-cyan-w-500,
+    "w-700": $c-cyan-w-700,
+  ),
+  "black": (
+    "900": $c-black-900,
+  ),
+  "white": (
+    "000": $c-white-000,
+  ),
+  "gray": (
+    "500": $c-gray-500,
+  ),
+);
+
+// Color map for generating custom color properties
+$contextual-color: (
+  "color": (
+    "body": $c-gray-500,
+    "heading": $c-black-900,
+    "button": $c-white-000,
+    "pledge": $c-cyan-w-500,
+    "navigation-mobile": $c-white-000,
+    "navigation-desktop": $c-black-900,
+    "divider": $c-gray-500,
+    "slider": $c-cyan-w-500,
+  ),
+  "background-color": ( 
+    "body": $c-gray-500 / 0.1,
+    "container": $c-white-000,
+    "button-reward": $c-cyan-w-500,
+    "button-out": $c-gray-500,
+    "button-bookmark": $c-gray-500 / 0.5,
+    "button-hover": $c-cyan-w-700,
+  ),
+);
+
+// Theme map for generating theme classes
+$theme-color: (
+  "dark": (
+    "color": (
+    ),
+    "background-color": (
+    ),
+  ),
+  "light": (
+    "color": (
+    ),
+    "background-color": (
+    ),
+  ),
+);
