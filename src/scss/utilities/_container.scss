@@ -5,7 +5,6 @@
     --_padding-inline: var(--padding-inline, 2 * #{$container-padding-inline});
 
     max-width: min(100% - var(--_padding-inline), var(--_max-width));
-    // For images to grow beyond their intrinsic size if intrinsic size < max-width
     min-width: min(100% - var(--_padding-inline), var(--_max-width));
     margin-inline: auto;
 
